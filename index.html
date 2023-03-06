@@ -1,0 +1,147 @@
+<!--Sets the document type to html, switches the languae to norweian bokmål-->
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <!--Sets the characterset to UTF-8-->
+    <meta charset="UTF-8">
+      <!--it tells the webpage to display the highest mode available for internet explorer.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--It tells the browser to scale the webpage based on the device your are using.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!--Sets the title, links the stylesheet and sets the favicon.-->
+    <title>Stranda Treningspark</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+<!--Creates the navigationbar and sets the logo, then makes different section (Forside, Treningsapparater, Hvor Befinner Oss?, Kontakt oss!)-->
+    <div class="navbar">
+        <a href="/index.html">
+            <img class="img-main" id="l1" src="/img/Stranda Treningspark.png" alt="Logo">
+          </a>
+        <a href="/index.html">Forside</a>
+        <div class="main-two">
+        <a href="/html/Treningsapparater.html">Treningsapparater</a>
+      </div>
+      <a href="/html/kart.html">Hvor befinner vi oss?  </a>
+      <a href="/html/kontakt.html">Kontakt oss!</a>
+      <button class="toggle-button">Toggle Dark Mode</button>
+      <script src="/script.js"></script>
+      </div>
+      
+
+
+<!--Makes a div with heading 1 and heading 2.-->
+      <div class="container">
+        <h1>Velkommen til Stranda Treningspark!</h1>
+        <h2>Laget av Sander 1IMB</h2>
+      </div>
+<!--This is the slideshow with the different images, it sets the image and adds credits to the image.-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/835179863161569341/1069561638547640330/IMG_6112.jpg" style="width:100%">
+          <div class="text">Stranda Treningspark | Fotograf: Sander</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/835179863161569341/1069561638862209084/IMG_6113.jpg" style="width:100%">
+          <div class="text">Stranda Treningspark | Fotograf: Sander
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://cdn.discordapp.com/attachments/835179863161569341/1069561639143219280/IMG_6114.jpg" style="width:100%">
+          <div class="text">Stranda Treningspark | Fotograf: Sander
+          </div>
+        </div>
+        
+        <!--This the the buttons, on click then go to next/previous slide-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        <!--This is for the dots on the buttom of the image, when clicked in goes to the clicked image.-->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <!--This is the javascript for the slideshow. it basically makes it possible to move between slides and display a specific slide.-->
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+<!--This is the footer element.-->
+<body>
+  <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Forside</h3>
+                      <ul>
+                        <li><a href="/html/Treningsapparater.html">Treningsapparater</a></li>
+                          <li><a href="/html/kart.html">Hvor befinner vi oss?</a></li>
+                          <li><a href="/html/kontakt.html">Kontakt oss!</a></li>
+                          <li><a href="/html/kilder.html">Kilder</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>Stranda Treningspark</h3>
+                      <p>Laget av Sander 1IMB</p>
+                  </div>
+
+
+<!--This is the logo on the footer element.-->
+<div class="logo-footer">
+<img src="/img/Stranda Treningspark.png" alt=""
+width="400px"
+height="100px">
+</div>
+
+
+              </div>
+              <p class="copyright">Sander © 2023</p>
+          </div>
+
+        <!--This is a extra element needed for the bootstrap icons to be able to work with the website.-->
+      </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

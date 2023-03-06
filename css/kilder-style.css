@@ -1,0 +1,128 @@
+/* Heading One*/
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* Body Element*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4f4fc;
+    color: rgb(136, 212, 199)
+    ;
+  }
+  /* Navigation Bar*/
+  .navbar {
+    overflow: hidden;
+    background-color: #007cba;
+    margin: -10px;
+    font-family: 'Poppins';
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poppins';
+  }
+  /* Navigation Bar Dropdown*/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Poppins';
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Poppins';
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Poppins';
+  }
+  /* Navigation Bar Dropdown*/
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Image One*/
+.img-main{
+    height: 25px;
+    width: 75px;
+}
+/* Heading Sec*/
+.img-sec{
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5%;
+}
+/* Paragraph Element*/
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+/* Iframe Element*/
+iframe {
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.toggle-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 8px;
+  right: 20px;
+  z-index: 999;
+}
+
+.toggle-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}

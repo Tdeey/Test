@@ -1,0 +1,47 @@
+<!--Sets the document type to html, switches the languae to norweian bokmål-->
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+      <!--Sets the characterset to UTF-8-->
+    <meta charset="UTF-8">
+         <!--it tells the webpage to display the highest mode available for internet explorer.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <!--It tells the browser to scale the webpage based on the device your are using.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Sets the title, links the stylesheet and sets the favicon.-->
+    <title>Stranda Treningspark</title>
+    <link rel="stylesheet" href="/css/kontakt-skjema.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+  <!--Creates the navigationbar and sets the logo, then makes different section (Forside, Treningsapparater, Hvor Befinner Oss?, Kontakt oss!)-->
+  <div class="navbar">
+    <a href="/index.html">
+        <img class="img-main" id="l1" src="/img/Stranda Treningspark.png" alt="">
+      </a>
+    <a href="/index.html">Forside</a>
+    <div class="main-two">
+    <a href="/html/Treningsapparater.html">Treningsapparater</a>
+  </div>
+  <a href="/html/kart.html">Hvor befinner vi oss?  </a>
+  <a href="/html/kontakt.html">Kontakt oss!</a>
+  <button class="toggle-button">Toggle Dark Mode</button>
+  <script src="/script.js"></script>
+  </div>
+<!--Heading 1 med kontakt, så en form med navn, email og melding som er required.-->
+<h1>Kontakt oss!</h1>
+    </head>
+    <body>
+      <form action="send-email.php" method="post">
+        <input type="text" placeholder="Navn" required>
+        <br>
+        <input type="email" placeholder="E-post" required>
+        <br>
+        <textarea placeholder="Melding" required></textarea>
+        <br>
+        <input type="submit" value="Send inn!">
+      </form>
+
+
+</body>
+</html>

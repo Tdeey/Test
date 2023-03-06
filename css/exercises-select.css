@@ -1,0 +1,265 @@
+/*This element imports font "Poppins and Ralewway" from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+
+/*This selects element exercise-select and puts text align to center*/
+.exercise-select {
+    text-align: center
+
+    
+}
+/* This is the select element, it adds all the commands below*/
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #DB5940;
+    color: white;
+  }
+  /* This is the exercise-display element, it adds all the commands below*/
+  #exercise-display {
+    padding: 20px;
+    background-color: #DB5940;
+    color: white;
+  }
+/* This is the expercise image element, it adds all the commands below*/
+  #exercise-image {
+    width: 200px;
+    height: 200px;
+  }
+
+/* This is the heading 1 element, it adds all the commands below*/
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Raleway';
+}
+/* This is the heading 2 element, it adds all the commands below*/
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Poppins';
+  margin-top: -10px;
+}
+/* This is the body element its the body of the html, it adds all the commands below*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4f4fc;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* This is the navigation bar, it adds all the commands below*/
+  .navbar {
+    overflow: hidden;
+    background-color: #DB5940;
+    margin: -7px;
+    font-family: 'Poppins';
+  }
+  
+/* This is the navigation bar anchor element, it adds all the commands below*/
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poppins';
+  }
+  
+/* This is the navigation bar dropdown menu, it adds all the commands below*/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Poppins';
+  }
+  /* This is the navigation bar dropdown menu and button, it adds all the commands below*/
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Poppins';
+    margin: 0;
+  }
+  /* This is the navigation bar hover over element, it adds all the commands below*/
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(69, 126, 212);
+  }
+  /* This is the navigation bar dropdown menu content, it adds all the commands below*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Poppins';
+  }
+    /* This is the navigation bar dropdown menu content anchor, it adds all the commands below*/
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+    /* This is the navigation bar dropdown menu content hover, it adds all the commands below*/
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* This is the image main element, it adds all the commands below*/
+.img-main{
+    height: 30px;
+    width: 110px;
+}
+  /* This is the image sec element, it adds all the commands below*/
+.img-sec{
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5%;
+}
+  /* This is the container element, it adds all the commands below*/
+.container {
+  width: 100%;  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  /* This is the media screen element, it adds all the commands below*/
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+
+  /* This is the * element simple explained it's the whole page, it adds all the commands below*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  border-radius: 5%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #081d28;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway';
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #081d28;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.toggle-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 8px;
+  right: 20px;
+  z-index: 999;
+}
+
+.toggle-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
