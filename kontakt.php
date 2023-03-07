@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="container">
                 <h1>Thank You!</h1>
                 <p>Your message has been sent successfully.</p>
-                <p><a href="index.html">Return to contact page</a></p>
+                <p><a href="/Test/index.html">Return to contact page</a></p>
             </div>
         </body>
         </html>';
