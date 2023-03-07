@@ -359,10 +359,11 @@ img {vertical-align: middle;}
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  color: #DB5940;
 }
 
 #popup {
-  background-color: #DB5940;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
