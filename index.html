@@ -151,9 +151,15 @@ height="100px">
   </div>
   
   <script>
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
+const popup = document.getElementById("popup");
+const popupOverlay = document.getElementById("popup-overlay");
+const closePopupButton = document.getElementById("close-popup");
+
+closePopupButton.addEventListener("click", closePopup);
+
+function closePopup() {
+  popupOverlay.style.display = "none";
+}
   </script>
 
 </body>
