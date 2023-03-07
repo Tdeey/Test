@@ -10,23 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--Sets the title, links the stylesheet and sets the favicon.-->
     <title>Stranda Treningspark</title>
-    <link rel="stylesheet" href="/Test/css/exercises-select.css">
-    <link rel="icon" type="image/x-icon" href="/Test/img/favicon.ico">
+    <link rel="stylesheet" href="/css/exercises-select.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 <body>
   <!--Creates the navigationbar and sets the logo, then makes different section (Forside, Treningsapparater, Hvor Befinner Oss?, Kontakt oss!)-->
   <div class="navbar">
-    <a href="/Test/index.html">
-        <img class="img-main" id="l1" src="/Test/img/Stranda Treningspark.png" alt="Stranda Logo">
+    <a href="/index.html">
+        <img class="img-main" id="l1" src="/img/Stranda Treningspark.png" alt="Stranda Logo">
       </a>
-    <a href="/Test/index.html">Forside</a>
+    <a href="/index.html">Forside</a>
     <div class="main-two">
-    <a href="/Test/html/Treningsapparater.html">Treningsapparater</a>
+    <a href="/html/Treningsapparater.html">Treningsapparater</a>
   </div>
-  <a href="/Test/html/kart.html">Hvor befinner vi oss?  </a>
-  <a href="/Test/html/kontakt.html">Kontakt oss!</a>
+  <a href="/html/kart.html">Hvor befinner vi oss?  </a>
+  <a href="/html/kontakt.html">Kontakt oss!</a>
   <button class="toggle-button">Toggle Theme</button>
-  <script src="/Test/script.js"></script>
+  <script src="/script.js"></script>
   </div>
 
 <!--Makes a div with heading 1 and heading 2.-->
@@ -59,15 +59,15 @@
           switch (selectedValue) {
             case "chest-press":
               display.innerHTML = "To perform a Chest Press, lie down on a flat bench with a weight in each hand. Lower the weights to the sides of your chest, then press them back up to the starting position.";
-              image.src = "/Test/img/Chest Press.gif";
+              image.src = "/img/Chest Press.gif";
               break;
             case "shoulder-press":
               display.innerHTML = "To perform a Shoulder Press, stand with a weight in each hand at shoulder level. Push the weights up above your head, then lower them back down to the starting position.";
-              image.src = "/Test/img/Shoulder Press.gif";
+              image.src = "/img/Shoulder Press.gif";
               break;
             case "pull-down":
               display.innerHTML = "To perform a Pull Down, sit at a pull-down machine with a wide bar attached to the cable. Grasp the bar with a wide grip and pull it down towards your chest, then release it back to the starting position.";
-              image.src = "/Test/img/Nedtrekk.gif";
+              image.src = "/img/Nedtrekk.gif";
               break;
             default:
               display.innerHTML = "";
@@ -84,9 +84,11 @@
                   <div class="col-sm-6 col-md-3 item">
                       <h3>Forside</h3>
                       <ul>
-                        <li><a href="/Test/html/Treningsapparater.html">Treningsapparater</a></li>
-                          <li><a href="/Test/html/kart.html">Hvor befinner vi oss?</a></li>
-                          <li><a href="/Test/html/kontakt.html">Kontakt oss!</a></li>
+                        <li><a href="/html/Treningsapparater.html">Treningsapparater</a></li>
+                          <li><a href="/html/kart.html">Hvor befinner vi oss?</a></li>
+                          <li><a href="/html/kontakt.html">Kontakt oss</a></li>
+                          <li><a href="om-oss.html">Om Oss</a></li>
+                          <li><a href="https://www.halden.kommune.no/">Halden Kommune</a></li>
                       </ul>
                   </div>
                   <div class="col-md-6 item text">
@@ -97,7 +99,7 @@
 
 <!--This is the logo on the footer element.-->
 <div class="logo-footer">
-<img src="/Test/img/Stranda Treningspark.png" alt="Stranda Logo"
+<img src="/img/Stranda Treningspark.png" alt="Stranda Logo"
 width="400px"
 height="100px">
 </div>
