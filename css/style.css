@@ -21,7 +21,9 @@ body {
     background-color: #e4f4fc;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
+
   /* Navigation Bar*/
   .navbar {
     overflow: hidden;
@@ -302,14 +304,14 @@ img {vertical-align: middle;}
 }
 /* Col Element*/
 .col-md-6 {
-  margin-top:  775px; 
+  margin-top:  950px; 
   text-align: center;
   color: white;
   text-decoration: none;
 }
 
 .toggle-button {
-  background-color: #be9a24;
+  background-color: #ffffff;
   color: #000;
   padding: 10px;
   border: none;
@@ -332,5 +334,10 @@ img {vertical-align: middle;}
   color: #fff;
 }
 
+.mapouter, iframe {
+  height: 400px;
+  margin-left: 200px;
+
+}
 
 

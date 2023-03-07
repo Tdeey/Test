@@ -8,8 +8,8 @@ h1 {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e4f4fc;
-    color: rgb(136, 212, 199)
-    ;
+    color: rgb(136, 212, 199);
+    overflow-x: hidden;
   }
   /* Navigation Bar*/
   .navbar {
